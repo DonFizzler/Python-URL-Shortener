@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <title>URL Shortener made by Fizzler</title>
+    <style>
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <h1>URL Shortener</h1>
+        <h2>Made by Fizzler</h2>
+        <form action="/create" method="POST" target="resultFrame">
+            <input type="text" name="url" placeholder="Insert your url here" size="50px">
+            <input type="submit" value="Shorten">
+        </form> <br>
+
+        <form action="/delete" method="POST" target="resultFrame">
+            <input type="text" name="code" placeholder="Insert your code here" size="50px">
+            <input type="submit" value="Delete">
+        </form> <br>
+
+        <form action="/info" method="POST" target="resultFrame">
+            <input type="text" name="code" placeholder="Insert your code here" size="50px">
+            <input type="submit" value="Get Info">
+        </form> <br>
+
+        <iframe name="resultFrame" class="hide" width="800px"></iframe>
+
+        <footer>
+            <a href="https://github.com/DonFizzler"> GitHub</a>
+        </footer>
+
+    </div>
+</body>

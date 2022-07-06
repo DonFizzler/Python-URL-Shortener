@@ -3,6 +3,7 @@
 ![Website Preview](https://z.zz.fo/G07SZ.png)
 ## How it works
 Creating a URL shortener you will be able to access long links easier
+
 Example: https://mywebiste.com/80jSj1 will redirect to https://example.com/
 ## Features
 -   Create Short URL via API
@@ -33,6 +34,7 @@ code=XXXXXXXXXX
 ```json
 {"timestamp": 1657098673, "url": "https://example.com/"}
 ```
+
 ># Create Short Url
 ```
 POST /create HTTP/1.1
@@ -56,8 +58,10 @@ code=XXXXXXXXXX
 ```json
 {"success": true, "message": "Code deleted!"}
 ```
+
 ># Requirements
 >flask
+>
 >validators
 
 
